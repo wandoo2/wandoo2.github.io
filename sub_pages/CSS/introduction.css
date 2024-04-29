@@ -1,0 +1,94 @@
+.realbody{
+    margin: 10%;
+    margin-top: -10px;
+}
+
+.mainbanner {
+    height: 100px;
+    width: 98%; 
+    background-color: #3b3939;
+    color: #ffffff;
+    border-radius: 60px 60px 60px 60px;
+    padding: 10px;  
+    text-align: center;
+    padding-top: 40px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+    
+}
+.headline{
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Menu bar animation part */
+
+.ani-navbar {
+    border-radius: 60px 60px 60px 60px;
+    width: 200px;
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #000;
+    height: 100%;
+    padding: 25px;
+    position: fixed;
+    z-index: 5;
+    text-align: right;
+    transition: all 1s;
+    transform: translateX(-177px);
+}
+
+.ani-navbar p,h4,h3{
+    font-family: 'main-font';
+    margin-bottom: 50px;
+}
+.jiwan-img {
+    max-width: 200px; 
+    height: 205px; 
+}
+
+
+.ani-navbar:hover {
+    transform: translateX(0px);
+    text-align: center;
+
+}
+    
+.ani-navbar:hover +.fullBody{
+    opacity: 0.5;
+    
+    transition: all 1s;
+}
+
+@keyframes slide {
+    0% { transform: translateX(-250px) }
+    50% { transform: translateX(50px) skewX(-30deg)}
+    100% { transform: translateX(0px) }
+}
+.ani-navbar p{
+    text-align: center;
+    margin-top: 2px;
+}
+.ani-navbar:hover p {
+    animation-name: slide;
+    animation-duration: 1s;
+} 
+/* menu bar animation  */
+@keyframes cursor {
+    to {
+        border-color: transparent;
+    }
+}
+
+/* Menu bar animation part */
+
+.content{
+    margin-top: 10px;
+}
