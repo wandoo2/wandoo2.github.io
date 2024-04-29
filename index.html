@@ -10,10 +10,10 @@
 <body>
     <nav class="ani-navbar">
         <h3>Menu</h3>
-        <p><a href="sub_pages/HTML/introduction.html">About Jiwan</a></p>
-        <p>My interest</p>
-        <p>Study</p>
-        <p>Wandoo</p>
+        <p class="menu"><a href="sub_pages/HTML/introduction.html" data-hover="About jiwan">About jiwan</a></p>
+        <p class="menu"><a href="" data-hover="Works">Works</a></p>
+        <p class="menu"><a href="" data-hover="Study">Study</a></p>
+        <p class="menu"><a href="" data-hover="Wandoo">Wandoo</a></p>
         
         <p style="margin-top:200px;"><img class="jiwan-img" src="images/surprise_jiwan.png" alt=""></p>
     </nav>
@@ -40,21 +40,22 @@
     
     
 </body>
-<script>
-    /*  메인배너 글자 Show aniamtion  */
-    const content = 'HELLO WORLD..! WELCOME TO JIWAN WORLD!';
+
+<script> 
+    <!-- 메인배너 보여주기 애니메이션용 -->
+    const content = "HELLO WORLD! I'm Jiwan!";
     const txt = document.querySelector('.mainbanner');
     let n = 0;
 
     const typing = function() {
-        txt.innerHTML += content[n++]; //.txt 엘리먼트에 위에 content의 변수에 저장한 문자를 순차적으로 뿌리겠다.
-        if (n >= content.length) { // content의 변수 길이가 넘으면 제안을 설정한다.
+        txt.innerHTML += content[n++]; 
+        if (n >= content.length) { 
             clearInterval(typingInterval);
         }
     };
 
     const typingInterval = setInterval(typing, 50);
-    /*  메인배너 글자 Show aniamtion  */
+
     
 
 </script>
