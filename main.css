@@ -1,10 +1,35 @@
+
 .realbody{
     margin: 10%;
     margin-top: -10px;
 }
-a:visited {
-    color: inherit; 
+
+.menu a{
+font-weight: bolder;
+font-size: 25px;
+color: black;
+text-decoration: none;
+text-shadow: none;
+position: relative;
+padding: 0 25px;
 }
+.menu a:before {
+position: absolute;
+padding: 0 25px;
+top: 0;
+left: 0;
+overflow: hidden;
+max-height: 0;
+color: #b33939;
+content: attr(data-hover);
+transition: 0.35s;
+}
+.menu a:hover:before {
+    max-height: 100%;
+    transition: 0.35s;
+}
+
+
 
 .mainbanner {
     height: 100px;
